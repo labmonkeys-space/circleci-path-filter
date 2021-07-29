@@ -12,7 +12,7 @@ workflows:
   setup:
     jobs:
       - path-filtering/filter:
-          base-revision: << pipeline.git.branch >>
+          base-revision: main
           config-path: .circleci/continue-config.yml
           mapping: |
             ^((?!docs$).)*$ trigger-src true
