@@ -14,5 +14,5 @@ workflows:
       - path-filtering/filter:
           config-path: .circleci/continue-config.yml
           mapping: |
-            ^docs$ trigger-docs true
             ^((?!docs$).)*$ trigger-src true
+            ^docs$ trigger-docs true
